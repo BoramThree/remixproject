@@ -2,70 +2,70 @@ package com.boram.section01.remix.model.dto;
 
 public class HjPeopleDTO {
 
-    private String EMP_ID;
-    private String EMP_NAME;
-    private String EMP_NO;
-    private String EMAIL;
-    private String PHONE;
+    private String empID;
+    private String empNAME;
+    private String empNO;
+    private String empEMAIL;
+    private String empPHONE;
 
     public HjPeopleDTO() {}
 
     public HjPeopleDTO(String EMP_ID, String EMP_NAME, String EMP_NO, String EMAIL, String PHONE) {
-        this.EMP_ID = EMP_ID;
-        this.EMP_NAME = EMP_NAME;
-        this.EMP_NO = EMP_NO;
-        this.EMAIL = EMAIL;
-        this.PHONE = PHONE;
+        this.empID = EMP_ID;
+        this.empNAME = EMP_NAME;
+        this.empNO = EMP_NO;
+        this.empEMAIL = EMAIL;
+        this.empPHONE = PHONE;
     }
 
-    public String getEMP_ID() {
-        return EMP_ID;
+    public String getEmpID() {
+        return empID;
     }
 
-    public void setEMP_ID(String EMP_ID) {
-        this.EMP_ID = EMP_ID;
+    public void setEmpID(String empID) {
+        this.empID = empID;
     }
 
-    public String getEMP_NAME() {
-        return EMP_NAME;
+    public String getEmpNAME() {
+        return empNAME;
     }
 
-    public void setEMP_NAME(String EMP_NAME) {
-        this.EMP_NAME = EMP_NAME;
+    public void setEmpNAME(String empNAME) {
+        this.empNAME = empNAME;
     }
 
-    public String getEMP_NO() {
-        return EMP_NO;
+    public String getEmpNO() {
+        return empNO;
     }
 
-    public void setEMP_NO(String EMP_NO) {
-        this.EMP_NO = EMP_NO;
+    public void setEmpNO(String empNO) {
+        this.empNO = empNO;
     }
 
-    public String getEMAIL() {
-        return EMAIL;
+    public String getEmpEMAIL() {
+        return empEMAIL;
     }
 
-    public void setEMAIL(String EMAIL) {
-        this.EMAIL = EMAIL;
+    public void setEmpEMAIL(String empEMAIL) {
+        this.empEMAIL = empEMAIL;
     }
 
-    public String getPHONE() {
-        return PHONE;
+    public String getEmpPHONE() {
+        return empPHONE;
     }
 
-    public void setPHONE(String PHONE) {
-        this.PHONE = PHONE;
+    public void setEmpPHONE(String empPHONE) {
+        this.empPHONE = empPHONE;
     }
 
     @Override
     public String toString() {
-        return "HJPeopleDTO{" +
-                "EMP_ID='" + EMP_ID + '\'' +
-                ", EMP_NAME='" + EMP_NAME + '\'' +
-                ", EMP_NO='" + EMP_NO + '\'' +
-                ", EMAIL='" + EMAIL + '\'' +
-                ", PHONE='" + PHONE + '\'' +
+        return "HjPeopleDTO{" +
+                "empID='" + empID + '\'' +
+                ", empNAME='" + empNAME + '\'' +
+                ", empNO='" + empNO + '\'' +
+                ", empEMAIL='" + empEMAIL + '\'' +
+                ", empPHONE='" + empPHONE + '\'' +
                 '}';
     }
 

@@ -1,15 +1,15 @@
 package com.boram.section01.remix.view;
 
-import com.boram.section01.remix.controller.HJController;
+import com.boram.section01.remix.controller.HjController;
 
 import java.util.Scanner;
 
-public class HJpage {
+public class HjPage {
 
-    public void view() {
+    public void display() {
 
         Scanner sc = new Scanner(System.in);
-        HJController hjController = new HJController();
+        HjController hjController = new HjController();
 
         do {
 

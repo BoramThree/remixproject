@@ -6,12 +6,12 @@ import com.boram.section01.remix.view.HJResult;
 
 import java.util.List;
 
-public class HJController {
+public class HjController {
 
     private final HJService hjService;
     private final HJResult hjResult;
 
-    public HJController() {
+    public HjController() {
         this.hjService = new HJService();
         this.hjResult = new HJResult();
     }
