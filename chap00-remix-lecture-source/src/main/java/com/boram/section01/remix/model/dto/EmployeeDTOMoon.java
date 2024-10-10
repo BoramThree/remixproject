@@ -1,33 +1,51 @@
 package com.boram.section01.remix.model.dto;
 
-import java.util.Date;
+import java.sql.Date;
 
-public class EmployeeDTONamKyu {
-    private int empID;
+public class EmployeeDTOMoon {
+
+    private String empId;
     private String empName;
     private String empNo;
     private String email;
-    private int phone;
+    private String phone;
     private String deptCode;
     private String jobCode;
     private String salLevel;
     private int salary;
     private double bonus;
-    private int managerId;
+    private String managerId;
     private Date hireDate;
     private Date entDate;
     private String entYn;
 
 
-
-   // getter / setter
-
-    public int getEmpID() {
-        return empID;
+    public EmployeeDTOMoon() {
     }
 
-    public void setEmpID(int empID) {
-        this.empID = empID;
+    public EmployeeDTOMoon(String empId, String empName, String empNo, String email, String phone, String deptCode, String jobCode, String salLevel, int salary, double bonus, String managerId, Date hireDate, Date entDate, String entYn) {
+        this.empId = empId;
+        this.empName = empName;
+        this.empNo = empNo;
+        this.email = email;
+        this.phone = phone;
+        this.deptCode = deptCode;
+        this.jobCode = jobCode;
+        this.salLevel = salLevel;
+        this.salary = salary;
+        this.bonus = bonus;
+        this.managerId = managerId;
+        this.hireDate = hireDate;
+        this.entDate = entDate;
+        this.entYn = entYn;
+    }
+
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
     }
 
     public String getEmpName() {
@@ -54,11 +72,11 @@ public class EmployeeDTONamKyu {
         this.email = email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -74,8 +92,8 @@ public class EmployeeDTONamKyu {
         return jobCode;
     }
 
-    public void setJobCode(String job_Code) {
-        this.jobCode = job_Code;
+    public void setJobCode(String jobCode) {
+        this.jobCode = jobCode;
     }
 
     public String getSalLevel() {
@@ -102,11 +120,11 @@ public class EmployeeDTONamKyu {
         this.bonus = bonus;
     }
 
-    public int getManagerId() {
+    public String getManagerId() {
         return managerId;
     }
 
-    public void setManagerId(int managerId) {
+    public void setManagerId(String managerId) {
         this.managerId = managerId;
     }
 
@@ -134,22 +152,20 @@ public class EmployeeDTONamKyu {
         this.entYn = entYn;
     }
 
-    //toString
-
     @Override
     public String toString() {
-        return "EmployeeDTONamKyu{" +
-                "empID=" + empID +
+        return "EmployeeDTOMoon{" +
+                "empId='" + empId + '\'' +
                 ", empName='" + empName + '\'' +
-                ", empNo=" + empNo +
+                ", empNo='" + empNo + '\'' +
                 ", email='" + email + '\'' +
-                ", phone=" + phone +
+                ", phone='" + phone + '\'' +
                 ", deptCode='" + deptCode + '\'' +
                 ", jobCode='" + jobCode + '\'' +
                 ", salLevel='" + salLevel + '\'' +
                 ", salary=" + salary +
                 ", bonus=" + bonus +
-                ", managerId=" + managerId +
+                ", managerId='" + managerId + '\'' +
                 ", hireDate=" + hireDate +
                 ", entDate=" + entDate +
                 ", entYn='" + entYn + '\'' +

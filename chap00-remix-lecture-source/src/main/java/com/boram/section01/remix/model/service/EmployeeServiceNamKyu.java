@@ -20,11 +20,9 @@ public class EmployeeServiceNamKyu {
 
         List<EmployeeDTONamKyu> empDTOList = employeeMapperNamKyu.selectAllEmployee();
 
+        return empDTOList;
+
+   }
 
     }
 
-
-
-
-
-}
