@@ -1,6 +1,8 @@
 package com.boram.section01.remix.common;
 
+import com.boram.section01.remix.model.dao.EmployeeMapperNamKyu;
 import com.boram.section01.remix.model.dao.EmployeeMapperYejin;
+import com.boram.section01.remix.view.EmployeeViewNamKyu;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
@@ -33,6 +35,8 @@ import com.boram.section01.remix.model.dao.EmployeeMapper;
                 //  comment. 작성한 MenuMapper 인터페이스 mapper 로 등록
                 configuration.addMapper(EmployeeMapper.class);
                 configuration.addMapper(EmployeeMapperYejin.class);
+                configuration.addMapper(EmployeeMapperNamKyu.class);
+
 
                 sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
 
