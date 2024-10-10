@@ -1,19 +1,19 @@
 package com.boram.section01.remix.controller;
 
 import com.boram.section01.remix.model.dto.HjPeopleDTO;
-import com.boram.section01.remix.model.service.HJService;
-import com.boram.section01.remix.view.HJResult;
+import com.boram.section01.remix.model.service.HjService;
+import com.boram.section01.remix.view.HjResult;
 
 import java.util.List;
 
 public class HjController {
 
-    private final HJService hjService;
-    private final HJResult hjResult;
+    private final HjService hjService;
+    private final HjResult hjResult;
 
     public HjController() {
-        this.hjService = new HJService();
-        this.hjResult = new HJResult();
+        this.hjService = new HjService();
+        this.hjResult = new HjResult();
     }
 
     public void selectAllPeople() {
