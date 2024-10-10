@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 public class EmployeeViewNamKyu {
 
+    public void display(){
+
     Scanner sc = new Scanner(System.in);
     EmployeeControllerNamKyu empControllerNam = new EmployeeControllerNamKyu();
 
@@ -23,17 +25,17 @@ public class EmployeeViewNamKyu {
         System.out.print("실행할 메뉴를 선택 하세요! : ");
         int no = sc.nextInt();
 
-        switch(no){
-            case 1 :
-                empControllerNam.selectAllEmployee();
-                break;
-            case 2 :
-                empControllerNam.selectEmployeeByBonus(inputEmployeeBonus());
-                break;
-        }
+            switch(no){
+                case 1 :
+                    empControllerNam.selectAllEmployee();
+                    break;
+                case 2 :
+                    empControllerNam.selectEmployeeByBonus(inputEmployeeBonus());
+                    break;
+            }
 
-    }while (true);
-    // test
+        }while (true);
+    }
 
     private static Map<String,String> inputEmployeeBonus(){
         Scanner sc = new Scanner(System.in);
