@@ -12,28 +12,26 @@ public class EmployeeControllerNamKyu {
     private final EmployeeServiceNamKyu employeeServiceNamKyu; // 서비스 내용 수정못하게 사용함
     private final PrintResultViewNamKyu printResultViewNamKyu; // 출력하는 내용 수정못하게 사용함
 
-    public EmployeeControllerNamKyu(){
+    public EmployeeControllerNamKyu() {
         this.employeeServiceNamKyu = new EmployeeServiceNamKyu();
         this.printResultViewNamKyu = new PrintResultViewNamKyu();
     }
 
 
-
-
-
     public void selectAllEmployee() {
         List<EmployeeDTONamKyu> empList = employeeServiceNamKyu.selectAllEmployee();
 
-        if(empList != null ){
-            printResultViewNamKyu.printEmpList(empList);
-        }else {
-            printResultViewNamKyu.printErroeMessage("selectList");
-        }
-    }
 
+        printResultViewNamKyu.printEmpList(empList);
+    }else
+
+    {
+        printResultViewNamKyu.printErroeMessage("selectList");
+    }
 
 
     public void selectEmployeeByBonus(Map<String, String> parameter) {
 
     }
+
 }
