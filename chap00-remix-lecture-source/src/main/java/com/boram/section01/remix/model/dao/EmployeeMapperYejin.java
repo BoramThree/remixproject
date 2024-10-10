@@ -7,6 +7,4 @@ import java.util.Map;
 
 public interface EmployeeMapperYejin {
     List<EmployeeDTOYejin> selectEmpList(Map<String, String> stringStringMap);
-
-
 }

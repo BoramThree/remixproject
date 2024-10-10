@@ -21,15 +21,6 @@ public class YejinView {
             System.out.println("3. 급여 조정");
             System.out.println("4. 해고하기");
             System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
 
             System.out.print("\n원하시는 메뉴를 선택해주세요:");
 
@@ -41,6 +32,7 @@ public class YejinView {
                     break;
 
                 case 2:
+                    employeeControllerYejin.insertNewEmp(insertInfo());
                     break;
 
                 case 3:
@@ -71,5 +63,16 @@ public class YejinView {
         mapInfo.put("endYear",endYear);
 
         return mapInfo;
+    }
+
+    private static Map<String,String> insertInfo(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("신입사원의 입름을 입력하세요: ");
+        String name = sc.nextLine();
+
+        Map<String, String> mamInfo = new HashMap<>();
+
+        return mamInfo;
     }
 }
