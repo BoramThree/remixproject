@@ -8,7 +8,7 @@ import java.util.List;
 
 import static com.boram.section01.remix.common.Template.getSqlSession;
 
-public class HJService {
+public class HjService {
 
     private HjPeopleMapper hjPeopleMapper;
 

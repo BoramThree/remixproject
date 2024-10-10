@@ -4,7 +4,7 @@ import com.boram.section01.remix.model.dto.HjPeopleDTO;
 
 import java.util.List;
 
-public class HJResult {
+public class HjResult {
 
     public void printPeopleList(List<HjPeopleDTO> peopleList) {
 
