@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ohgiraffers.section01.remix.model.dao.HJPeopleMapper">
+
+    <!-- dto 와 일치 시켜줘야 함. -->
+    <resultMap id="empResultMap" type="com.ohgiraffers.section01.remix.model.dto.HJPeopleDTO">
+        <id property="empId" column="EMP_ID" />
+        <result property="empName" column="EMP_NAME" />
+        <result property="empNo" column="EMP_NO" />
+        <result property="empEmail" column="EMAIL" />
+        <result property="empPhone" column="PHONE" />
+    </resultMap>
+
+    <select id="selectAllPeople" resultMap="empResultMap">
+        SELECT
+            EMP_ID, EMP_NAME, EMP_NO, EMAIL, PHONE
+        FROM EMPLOYEE;
+    </select>
+
+</mapper>
