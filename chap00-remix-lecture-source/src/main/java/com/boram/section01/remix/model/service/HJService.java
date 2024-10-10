@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
-import static com.boram.section01.remix.common.HJTemplate.getSqlSession;
+import static com.boram.section01.remix.common.Template.getSqlSession;
 
 public class HJService {
 
