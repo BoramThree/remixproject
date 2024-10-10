@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.boram.section01.remix.model.dao.EmployeeMapperYejin">
+    
+    <resultMap id="resultMapEmpDTOYejin" type="com.boram.section01.remix.model.dto.EmployeeDTOYejin">
+        <result property="empId" column="EMP_ID"/>
+        <result property="empName" column="EMP_NAME"/>
+        <result property="empNo" column="EMP_NO"/>
+        <result property="salary" column="SALARY"/>
+        <result property="bonus" column="BONUS"/>
+        <result property="hireDate" column="HIRE_DATE"/>
+    </resultMap>
+
+    <select id="selectEmpList" parameterType="map" resultMap="resultMapEmpDTOYejin">
+        SELECT
+            EMP_ID
+            , EMP_NAME
+            , EMP_NO
+            , SALARY
+            , BONUS
+            , HIRE_DATE
+        FROM
+            EMPLOYEE
+        WHERE
+            year(HIRE_DATE) between #{startYear} and #{endYear}
+    </select>
+
+</mapper>
