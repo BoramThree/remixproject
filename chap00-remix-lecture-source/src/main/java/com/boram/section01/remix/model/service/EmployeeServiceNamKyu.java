@@ -10,21 +10,18 @@ import static com.boram.section01.remix.common.Template.getSqlSession;
 
 public class EmployeeServiceNamKyu {
 
-    private EmployeeMapperNamKyu employeeMapperNamKyu;
-
-    public List<EmployeeDTONamKyu> selectAllEmployee() {
-
-        SqlSession sqlSession = getSqlSession();
-
-        employeeMapperNamKyu = sqlSession.getMapper(EmployeeMapperNamKyu.class);
-
-        List<EmployeeDTONamKyu> empDTOList = employeeMapperNamKyu.selectAllEmployee();
-        //
+//    private EmployeeMapperNamKyu employeeMapperNamKyu;
+//
+//    public List<EmployeeDTONamKyu> selectAllEmployee() {
+//
+//        SqlSession sqlSession = getSqlSession();
+//
+//        employeeMapperNamKyu = sqlSession.getMapper(EmployeeMapperNamKyu.class);
+//
+//        List<EmployeeDTONamKyu> empDTOList = employeeMapperNamKyu.selectAllEmployee();
+//
+//
+//   }
 
     }
 
-
-
-
-
-}

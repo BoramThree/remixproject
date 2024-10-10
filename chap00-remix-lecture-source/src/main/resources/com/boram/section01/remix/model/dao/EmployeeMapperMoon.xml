@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="EmployeeMapper">
+<mapper namespace="EmployeeMapperMoon">
 
     <resultMap id="employeeResultMap" type="com.boram.section01.remix.model.dto.EmployeeDTOMoon">
         <id property="empId" column="EMP_ID"/>
