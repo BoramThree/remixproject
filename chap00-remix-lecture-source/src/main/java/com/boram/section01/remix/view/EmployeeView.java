@@ -30,6 +30,7 @@ public class EmployeeView {
                     break;
 
                 case 3:
+                    JeonghyeonView.moonplay();
                     break;
 
                 case 4:
