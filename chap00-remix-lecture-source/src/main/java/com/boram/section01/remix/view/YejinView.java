@@ -21,7 +21,6 @@ public class YejinView {
             System.out.println("3. 급여 조정");
             System.out.println("4. 해고하기");
             System.out.println("99. 이전 메뉴 화면으로 돌아가기");
-            System.out.println("99. 이전 메뉴 화면으로 돌아가기");
 
             System.out.print("\n원하시는 메뉴를 선택해주세요:");
 
