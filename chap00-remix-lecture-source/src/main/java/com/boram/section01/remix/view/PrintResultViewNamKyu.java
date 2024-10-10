@@ -5,6 +5,11 @@ import com.boram.section01.remix.model.dto.EmployeeDTONamKyu;
 import java.util.List;
 
 public class PrintResultViewNamKyu {
+    public void printEmpList(List<EmployeeDTONamKyu> empList) {
+    }
+
+    public void printErroeMessage(String selectList) {
+    }
 
     //
 
