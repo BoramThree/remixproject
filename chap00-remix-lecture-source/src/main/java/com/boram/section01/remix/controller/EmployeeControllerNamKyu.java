@@ -23,12 +23,7 @@ public class EmployeeControllerNamKyu {
 
 
         printResultViewNamKyu.printEmpList(empList);
-    }else
-
-    {
-        printResultViewNamKyu.printErroeMessage("selectList");
     }
-
 
     public void selectEmployeeByBonus(Map<String, String> parameter) {
 
