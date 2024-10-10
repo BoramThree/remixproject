@@ -10,7 +10,8 @@ import static com.boram.section01.remix.common.Template.getSqlSession;
 
 public class EmployeeServiceNamKyu {
 
-    private EmployeeMapperNamKyu employeeMapperNamKyu;
+    private static EmployeeMapperNamKyu employeeMapperNamKyu;
+
 
     public List<EmployeeDTONamKyu> selectAllEmployee() {
 
@@ -22,7 +23,24 @@ public class EmployeeServiceNamKyu {
 
         return empDTOList;
 
-   }
+        //=============================================================================
+    }
+
+    public static EmployeeDTONamKyu selectEmployeeByBonus(int empId) {
+
+        SqlSession sqlSession = getSqlSession();
+
+        employeeMapperNamKyu = sqlSession.getMapper(EmployeeMapperNamKyu.class);
+
+        EmployeeDTONamKyu empDTONam = employeeMapperNamKyu.selectEmployeeByBonus(empId);
+
+        sqlSession.close();
+
+        return empDTONam;
 
     }
+}
+
+
+
 

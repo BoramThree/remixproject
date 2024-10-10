@@ -7,6 +7,8 @@ import com.boram.section01.remix.view.PrintResultViewNamKyu;
 import java.util.List;
 import java.util.Map;
 
+import static java.lang.Double.parseDouble;
+
 public class EmployeeControllerNamKyu {
 
     private final EmployeeServiceNamKyu employeeServiceNamKyu; // 서비스 내용 수정못하게 사용함
@@ -25,7 +27,17 @@ public class EmployeeControllerNamKyu {
         printResultViewNamKyu.printEmpList(empList);
     }
 
-    public void selectEmployeeByBonus(Map<String, String> parameter) {
+    public void selectEmployeeByBonus(Map<String,String> parameter) {
+
+        int empId = Integer.parseInt(parameter.get("empId"));
+
+        EmployeeDTONamKyu empDTONamKyu = EmployeeServiceNamKyu.selectEmployeeByBonus (empId);
+
+        if(empDTONamKyu != null){
+            printResultViewNamKyu.printEmpBonus(empDTONamKyu);
+
+        }
+
 
     }
 

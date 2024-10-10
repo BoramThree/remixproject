@@ -7,24 +7,31 @@
         <id property="empID" column="EMP_ID"/>
         <result property="empName" column="EMP_NAME"/>
         <result property="empNo" column="EMP_NO"/>
-        <result property="email" column="EMAIL"/>
-        <result property="phone" column="PHONE"/>
-        <result property="deptCode" column="DEPT_CODE"/>
-        <result property="jobCode" column="JOB_CODE"/>
-        <result property="salLevel" column="SAL_LEVEL"/>
         <result property="salary" column="SALARY"/>
         <result property="bonus" column="BONUS"/>
-        <result property="managerId" column="MANAGER_ID"/>
-        <result property="hireDate" column="HIRE_DATE"/>
-        <result property="entYn" column="ENT_YN"/>
     </resultMap>
 
     <select id="selectAllEmployee" resultMap="EmployeeResultMap">
         SELECT
-            *
+            EMP_ID,
+            EMP_NAME,
+            EMP_NO,
+            SALARY,
+            BONUS
         FROM
             EMPLOYEE
 
+    </select>
+
+    <select id="selectEmployeeByBonus" resultMap="EmployeeResultMap" resultType="_double">
+        SELECT
+            *
+        FROM
+            EMPLOYEE
+        WHERE
+            BONUS != 'NULL'
+        AND
+            EMP_ID = #{empId}
     </select>
 
 </mapper>

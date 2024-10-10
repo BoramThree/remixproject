@@ -16,18 +16,22 @@ public class PrintResultViewNamKyu {
 
     }
 
+    public void printEmpBonus(EmployeeDTONamKyu empDTONamKyu) {
+        System.out.println(empDTONamKyu.getEmpID() + "번 사원 조회 결과 입니다.");
+        System.out.println(empDTONamKyu);
+    }
 
 
-    public void printErroeMessage(String error) {
+    public void printErrorMessage(String error) {
 
         String errorMessage = "";
 
         switch(error){
             case "selectList" :
-                errorMessage = "메뉴 전체 조회에 실패했습니다!";
+                errorMessage = "전체 조회에 실패했습니다!";
                 break;
             case "selectOne" :
-                errorMessage = "메뉴코드로 메뉴 조회에 실패 하셔습니다.";
+                errorMessage = "보너스 있는 직원 조회에 실패 하셔습니다.";
                 break;
             case "insert" :
                 errorMessage = "신규 메뉴 등록에 실패 하셨습니다. 유감이네요";

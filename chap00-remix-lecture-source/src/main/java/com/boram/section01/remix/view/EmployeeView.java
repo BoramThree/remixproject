@@ -19,7 +19,7 @@ public class EmployeeView {
             System.out.println("4. 경훈님 페이지");
             System.out.println("5. 혜진님 페이지");
 
-            System.out.print("\n접속하실 페이지를 골라주세요: ");
+            System.out.print("접속하실 페이지를 골라주세요: ");
 
             int num = sc.nextInt();
 

@@ -8,4 +8,5 @@ public interface EmployeeMapperNamKyu {
 
     List<EmployeeDTONamKyu> selectAllEmployee();
 
+    EmployeeDTONamKyu selectEmployeeByBonus(int empId);
 }
