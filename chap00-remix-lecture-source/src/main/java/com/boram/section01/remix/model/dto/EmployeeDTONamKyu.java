@@ -1,9 +1,11 @@
 package com.boram.section01.remix.model.dto;
 
+import java.util.Date;
+
 public class EmployeeDTONamKyu {
     private int empID;
     private String empName;
-    private int empNo;
+    private String empNo;
     private String email;
     private int phone;
     private String deptCode;
@@ -12,8 +14,8 @@ public class EmployeeDTONamKyu {
     private int salary;
     private double bonus;
     private int managerId;
-    private int hireDate;
-    private int entDate;
+    private Date hireDate;
+    private Date entDate;
     private String entYn;
 
 
@@ -36,11 +38,11 @@ public class EmployeeDTONamKyu {
         this.empName = empName;
     }
 
-    public int getEmpNo() {
+    public String getEmpNo() {
         return empNo;
     }
 
-    public void setEmpNo(int empNo) {
+    public void setEmpNo(String empNo) {
         this.empNo = empNo;
     }
 
@@ -108,19 +110,19 @@ public class EmployeeDTONamKyu {
         this.managerId = managerId;
     }
 
-    public int getHireDate() {
+    public Date getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(int hireDate) {
+    public void setHireDate(Date hireDate) {
         this.hireDate = hireDate;
     }
 
-    public int getEntDate() {
+    public Date getEntDate() {
         return entDate;
     }
 
-    public void setEntDate(int entDate) {
+    public void setEntDate(Date entDate) {
         this.entDate = entDate;
     }
 

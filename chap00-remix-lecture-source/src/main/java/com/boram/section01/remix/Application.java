@@ -7,6 +7,8 @@ public class Application {
 
         EmployeeView view = new EmployeeView();
         view.display();
+
+
     }
 
 }
