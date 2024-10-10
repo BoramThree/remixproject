@@ -11,6 +11,10 @@
         <result property="phone" column="PHONE"/>
         <result property="deptCode" column="DEPT_CODE"/>
         <result property="jobCode" column="JOB_CODE"/>
+        <result property="salLevel" column="SAL_LEVEL"/>
+        <result property="salary" column="SALARY"/>
+        <result property="bonus" column="BONUS"/>
+        <result property="managerId" column=""/>
 
     </resultMap>
 </mapper>

@@ -6,7 +6,9 @@ import java.util.List;
 
 public class PrintResultViewNamKyu {
 
+    //
 
+    //asdfasdfds
 
 
 
