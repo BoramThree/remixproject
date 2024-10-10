@@ -13,4 +13,20 @@ public class PrintResultMoon {
             System.out.println(employee);
         }
     }
+
+    public void printErrorMessage (String errorCode){
+
+        String errorMessage = " ";
+
+        switch (errorCode){
+            case "selectList" :
+                System.out.println("전체 조회를 실패하셨습니다...ㅠㅠ");
+                break;
+        }
+
+
+
+    }
+
+
 }

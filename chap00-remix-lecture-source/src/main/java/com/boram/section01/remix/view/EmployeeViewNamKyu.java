@@ -12,27 +12,27 @@ public class EmployeeViewNamKyu {
     EmployeeControllerNamKyu empControllerNam = new EmployeeControllerNamKyu();
 
 
-    do{
-        System.out.println("=====Employee 메뉴 관리 시스템====");
-        System.out.println(" 1.메뉴 전체 조회하기");
-        System.out.println(" 2 아이디로 직원 조회하기 ");
-        System.out.println(" 3 보너스 추가 등록하기 ");
-        System.out.println(" 4 보너스 수정하기");
-        System.out.println(" 5 보너스 삭제하기");
-        System.out.println("===============================");
-        System.out.print("실행할 메뉴를 선택 하세요! : ");
-        int no = sc.nextInt();
-
-        switch(no){
-            case 1 :
-                empControllerNam.selectAllEmployee();
-                break;
-            case 2 :
-                empControllerNam.selectEmployeeByBonus(inputEmployeeBonus());
-                break;
-        }
-
-    }while (true);
+//    do{
+//        System.out.println("=====Employee 메뉴 관리 시스템====");
+//        System.out.println(" 1.메뉴 전체 조회하기");
+//        System.out.println(" 2 아이디로 직원 조회하기 ");
+//        System.out.println(" 3 보너스 추가 등록하기 ");
+//        System.out.println(" 4 보너스 수정하기");
+//        System.out.println(" 5 보너스 삭제하기");
+//        System.out.println("===============================");
+//        System.out.print("실행할 메뉴를 선택 하세요! : ");
+//        int no = sc.nextInt();
+//
+//        switch(no){
+//            case 1 :
+//                empControllerNam.selectAllEmployee();
+//                break;
+//            case 2 :
+//                empControllerNam.selectEmployeeByBonus(inputEmployeeBonus());
+//                break;
+//        }
+//
+//    }while (true);
 
     private static Map<String,String> inputEmployeeBonus(){
         Scanner sc = new Scanner(System.in);

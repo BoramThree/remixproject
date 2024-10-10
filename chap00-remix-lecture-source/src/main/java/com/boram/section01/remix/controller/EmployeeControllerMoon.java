@@ -21,7 +21,9 @@ public class EmployeeControllerMoon {
 
         List<EmployeeDTOMoon> employeeList = employeeServiceMoon.selectAllEmployee();
         if (employeeList != null){
-            PrintResultMoon.printEmployeeList
+            printResultMoon.printEmployeeList(employeeList);
+        }else{
+            printResultMoon.printErrorMessage("selectList");
         }
 
 
