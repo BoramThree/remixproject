@@ -8,8 +8,8 @@ import java.util.List;
 
 public class HjController {
 
-    private final HJService hjService;
-    private final HJResult hjResult;
+    private final HjService hjService;
+    private final HjResult hjResult;
 
     public HjController() {
         this.hjService = new HjService();

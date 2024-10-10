@@ -7,7 +7,7 @@ public class EmployeeView {
     public void display() {
         Scanner sc = new Scanner(System.in);
         YejinView yejinView = new YejinView();
-        HjPage HJpage = new HjPage();
+        HjPage Hjpage = new HjPage();
         EmployeeViewNamKyu employeeViewNamKyu = new EmployeeViewNamKyu();
 
         do {
@@ -40,7 +40,7 @@ public class EmployeeView {
                     break;
 
                 case 5:
-                    HJpage.display();
+                    Hjpage.display();
                     break;
 
             }
