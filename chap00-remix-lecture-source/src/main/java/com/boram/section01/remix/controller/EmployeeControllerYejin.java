@@ -28,4 +28,6 @@ public class EmployeeControllerYejin {
     }
 
 
+    public void insertNewEmp(Map<String, String> stringStringMap) {
+    }
 }
