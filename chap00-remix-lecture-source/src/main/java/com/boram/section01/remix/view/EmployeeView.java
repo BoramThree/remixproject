@@ -40,7 +40,7 @@ public class EmployeeView {
                     break;
 
                 case 5:
-                    HJpage.display();
+                    Hjpage.display();
                     break;
 
             }
